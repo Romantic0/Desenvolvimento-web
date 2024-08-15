@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoa</title>
+</head>
+<body>
+    <h1>Cadastro de Pessoa</h1>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <ul>
+                <li>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required maxlength="100">
+                </li>
+                <li>
+                    <label for="sobrenome">Sobrenome:</label><br>
+                    <input type="text" id="sobrenome" name="sobrenome" required maxlength="100">
+                </li>
+                <li>
+                    <label for="email">E-Mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </li>
+                <li>
+                    <label for="data_nascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="data_nascimento" name="data_nascimento" min="1920-01-01" max="2024-01-01">
+                </li>
+                <li>
+                    <label for="sexo">Sexo:</label><br>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </li>
+                <li>
+                    <label for="endereco">Endereço:</label><br>
+                    <input type="text" id="endereco" name="endereco" maxlength="200">
+                </li>
+                <li>
+                    <label for="cep">CEP:</label><br>
+                    <input type="text" id="cep" name="cep" maxlength="10">
+                </li>
+                <li>
+                    <label for="cor_favorita">Cor Favorita:</label><br>
+                    <input type="color" id="cor_favorita" name="cor_favorita">
+                </li>
+                <li>
+                    <label for="estado">Estado (UF):</label><br>
+                    <select id="estado" name="estado">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
