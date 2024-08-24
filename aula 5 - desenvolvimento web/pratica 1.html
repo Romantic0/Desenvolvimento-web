@@ -7,26 +7,31 @@
     <link rel="stylesheet" href="pratica 1.css">
 </head>
 <body>
-    <div id="calculadora">
-        <div class="calc">
-            <label for="valor1">Valor 1:</label>
-            <input type="text" id="valor1" name="valor1" required maxlength="100">
-            
-            <label for="valor2">Valor 2:</label>
-            <input type="text" id="valor2" name="valor2" required maxlength="100">
-
-            <label for="resultado">Resultado:</label>
-            <input type="text" id="resultado" name="resultado" readonly maxlength="100">
-        </div>
-        <div class="calcbotao">
-            <button id="soma" data-action="add">+</button>
-            <button class="opcalc" data-action="sub">-</button>
-            <button class="opcalc" data-action="mul">*</button>
-            <button class="opcalc" data-action="div">/</button>
-        </div>
-    </div>
-
+<div class="calculadora">
    
+    <div class="keys_calc">
+        <button class="nums">1</button>
+        <button class="nums">2</button>
+        <button class="nums">3</button>
+        <button class="nums">4</button>
+        <button class="nums">5</button>
+        <button class="nums">6</button>
+        <button class="nums">7</button>
+        <button class="nums">8</button>
+        <button class="nums">9</button>
+        <button class="nums">0</button>
+        <button class="key_op" data-action="add">+</button>
+        <button class="key_op" data-action="sub">-</button>
+        <button class="key_op" data-action="mult">*</button>
+        <button class="key_op" data-action="div">/</button>
+        <button class="key_eq" data-action="calc">=</button>
+        <button class="key_clear" data-action="clear">C</button>
+    </div>
+    <div class="display_calc">
+        
+    </div>
+</div>
+    
     <script src="pratica 1.js"></script>
 </body>
 </html>
