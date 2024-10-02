@@ -42,7 +42,7 @@
                 break;
         }
 
-        // Cálculo de juros compostos
+      
         $total_price = $cash_price * pow((1 + $interest_rate), $installments);
         $installment_value = $total_price / $installments;
 
